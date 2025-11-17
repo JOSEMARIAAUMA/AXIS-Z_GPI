@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>AXIS-Z GPI</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/recharts/umd/Recharts.min.js"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            fontFamily: {
+              sans: ['Montserrat', 'sans-serif'],
+            },
+            colors: {
+              'taupe-blue': '#587B7F',
+              'taupe-green': '#6B8E23',
+              'taupe-brown': '#A0522D',
+              'taupe-burgundy': '#800020',
+              'brand-bg-dark': '#1f2937',
+              'brand-bg-light': '#374151',
+              'brand-surface': '#4b5563',
+              'brand-primary': '#63b3ed',
+              'brand-text': '#edf2f7',
+              'brand-text-secondary': '#c1cbe0',
+              // Status Colors
+              'status-available': '#16a34a',
+              'status-reserved': '#2563eb',
+              'status-sold': '#b91c1c',
+              'status-active': '#16a34a',
+              'status-inactive': '#9ca3af',
+              // Table Header Colors
+              'header-general-main': '#4b5563',
+              'header-general-sub': '#6b7280',
+              'header-location-main': '#587B7F',
+              'header-location-sub': '#829a9e',
+              'header-specs-main': '#800020',
+              'header-specs-sub': '#a04050',
+              'header-useful-main': '#6B8E23',
+              'header-useful-sub': '#91a95e',
+              'header-built-main': '#A0522D',
+              'header-built-sub': '#b87e5b',
+              'header-management-main': '#63b3ed',
+              'header-management-sub': '#8ac7f0',
+              'header-useful2-main': '#556B2F',
+              'header-useful2-sub': '#7c8e65',
+              'header-built2-main': '#8A496B',
+              'header-built2-sub': '#a9758f',
+              'header-exterior-main': '#6A5ACD',
+              'header-exterior-sub': '#8375c7',
+              'header-total-main': '#A0522D',
+              'header-total-sub': '#b87e5b',
+              'header-prices-main': '#4682B4',
+              'header-prices-sub': '#6a9cc9',
+            },
+          }
+        }
+      }
+    </script>
+<script type="importmap">
+{
+  "imports": {
+    "react-dom/": "https://aistudiocdn.com/react-dom@^19.2.0/",
+    "react/": "https://aistudiocdn.com/react@^19.2.0/",
+    "react": "https://aistudiocdn.com/react@^19.2.0",
+    "recharts": "https://aistudiocdn.com/recharts@^3.4.1",
+    "xlsx": "https://cdn.sheetjs.com/xlsx-0.20.2/package/xlsx.mjs"
+  }
+}
+</script>
+<link rel="stylesheet" href="/index.css">
+</head>
+<body class="bg-brand-bg-dark text-brand-text">
+    <div id="root"></div>
+    <script type="module" src="/index.tsx"></script>
+</body>
+</html>
